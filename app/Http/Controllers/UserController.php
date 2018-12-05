@@ -171,7 +171,7 @@ class UserController extends Controller
                 
                 return $mainAuthor;
 
-                return redirect('publication/journals');
+                return redirect('publication/journals')->with('success', 'Publication has benn accepted');
 
             }
 
@@ -230,7 +230,7 @@ class UserController extends Controller
 
                 $mainAuthor->save();
             
-                return redirect('publication/conferences');
+                return redirect('publication/conferences')->with('success', 'Publication has benn accepted');
 
             }
 
@@ -291,7 +291,7 @@ class UserController extends Controller
                 $mainAuthor->save();
                 
 
-                return redirect('publication/books');
+                return redirect('publication/books')->with('success', 'Publication has benn accepted');
 
             }
 
@@ -355,7 +355,7 @@ class UserController extends Controller
 
                 $mainAuthor->save();
 
-                return redirect('publication/bookchapters');
+                return redirect('publication/bookchapters')->with('success', 'Publication has benn accepted');
 
             }
 
@@ -382,7 +382,7 @@ class UserController extends Controller
 
                 Mail::send(new AcceptedClaimMail( $mainAuthor, $research ));
 
-                return redirect('publication/researches');
+                return redirect('publication/researches')->with('success', 'Publication has benn accepted');
                 
             }
 

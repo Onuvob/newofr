@@ -81,7 +81,7 @@
                                     
                         </div>
 
-                        <div>
+                        <div class="header-shape-border">
                             <label><strong>Upload file</strong></label>
                             <input  type="file" name="bookFile" id="upload_file" accept=".doc, .docx, .pdf">
                         </div>

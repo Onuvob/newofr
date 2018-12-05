@@ -6,6 +6,21 @@
 
 <div class="container mt-3">
 
+
+    @if( session('success') )
+
+        <div class="row">
+
+            <div class="mx-auto col-sm-8 alert alert-success">
+                {{ session('success')}}
+            </div>
+            
+        </div>
+
+
+    @endif
+    
+
     <div class="card shadow animated fadeIn bg-transparent">
         <div class="card-header bg-dark text-center">
             <h5 class="text-light">Applied Claim</h5>

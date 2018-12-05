@@ -77,6 +77,10 @@ class ResearchController extends Controller
 
             $request->resFile->storeAs('public/research', $fileName);
         }
+        else
+        {
+            $fileName = 'NoFile';   
+        }
 
 
         $research = new Research;

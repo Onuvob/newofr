@@ -83,6 +83,12 @@ class BookChapterController extends Controller
 
             $request->bookCFile->storeAs('public/bookchapter', $fileName);
         }
+        else
+        {
+            $fileName = 'NoFile';   
+        }
+
+
 
 
         $bookChapter = new BookChapter;

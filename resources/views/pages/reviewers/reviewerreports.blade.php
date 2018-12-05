@@ -6,6 +6,20 @@
 
 <div class="container mt-3">
 
+
+    @if( session('success') )
+
+        <div class="row">
+
+            <div class="mx-auto col-sm-8 alert alert-success">
+                {{ session('success')}}
+            </div>
+            
+        </div>
+
+
+    @endif
+
 	<h3 class="header-shape shadow animated fadeInLeft">Reviewer Reports Research Grants</h3>
 
     @if(count($reviewers) > 0)

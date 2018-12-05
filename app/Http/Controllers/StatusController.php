@@ -111,12 +111,4 @@ class StatusController extends Controller
         return view('pages.admin.publications.showpublications.research')->with('research', $research);
     }
 
-    public function rewardstatus()
-    {
-        /*$journals = Journal::where('pub_status', 'pending')
-               ->orderBy('updated_at', 'desc')
-               ->paginate(30);
-        */
-        //return view('pages.viewstatus.rewardstatus');
-    }
 }

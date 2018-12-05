@@ -81,6 +81,11 @@ class BookController extends Controller
 
             $request->bookFile->storeAs('public/book', $fileName);
         }
+        else
+        {
+            $fileName = 'NoFile';   
+        }
+
 
         $bookController = new Book;
 

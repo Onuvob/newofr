@@ -53,6 +53,6 @@ class MailController extends Controller
 
     	Mail::send(new AddReviewerMail());
 
-    	return redirect('ongoingresearch/'. $id );
+    	return redirect('ongoingresearch/'. $id )->with('success', 'Reviewer has been added');
     }
 }

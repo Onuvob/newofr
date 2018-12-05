@@ -7,6 +7,19 @@
 
 <div class="container">
 
+    @if( session('success') )
+
+        <div class="row">
+
+            <div class="mx-auto col-sm-8 alert alert-success">
+                {{ session('success')}}
+            </div>
+            
+        </div>
+
+
+    @endif
+
     <div class="row justify-content-center">
 
         <div class="col-md-11">
